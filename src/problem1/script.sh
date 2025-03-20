@@ -1,0 +1,2 @@
+#!/bin/bash
+cat transaction-log.txt | grep 'TSLA' | grep '"side": "sell"' | awk -F'"' '{print $4;}' | while read order_id; do curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "https://example.com/api/$order_id" >> output.txt; done
