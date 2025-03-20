@@ -53,6 +53,13 @@ Provide your solution here:
 ![AWS Design](./AWS%20Infra%20design.png)
 
 
+# Future enhancements
+- Resilient Event-Driven Architecture: As the system evolves, incorporate event streaming platforms (e.g., AWS MSK for Kafka) to efficiently manage larger data volumes and support more complex processing pipelines.
+- Failover Cluster: Implement a secondary EKS cluster to ensure continuous availability during maintenance or unexpected downtime, leveraging Route 53 for seamless failover.
+- Global Databases: Enable a Global Datastore for ElastiCache and deploy Aurora Global Database to enhance data replication and global availability.
+- Enhanced Security: Strengthen security by implementing multiple network layers, including VPC Peering, to further isolate and protect critical resources.
+
+
 # Reference document
 https://drive.google.com/file/d/11bjXkzR9eQ8vZL4zqwxCN5qP9jyvisO2/view?usp=sharing
 
